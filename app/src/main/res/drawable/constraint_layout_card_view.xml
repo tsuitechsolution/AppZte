@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="1dp" android:right="1dp" android:left="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F1F1F1" /> <!-- Change this color to the desired color -->
+            <corners android:radius="8dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" /> <!-- Transparent color to clear the center -->
+        </shape>
+    </item>
+</layer-list>

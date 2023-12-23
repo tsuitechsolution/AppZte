@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral99"
+    tools:context=".ui.activity.AddCustomerActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BA0E0E"
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/back_btn"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Customer"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/toolbar_content"
+            android:layout_marginStart="40dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/eT_userName"
+        android:hint="Enter Your Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" android:background="@drawable/edit_text_backgeound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/eT_userEmail"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+android:hint="Enter your Email"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_backgeound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eT_userName"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/eT_userMobile"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+       android:hint="Enter your Mobile Number "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_backgeound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eT_userEmail"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/eT_userImei1"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+       android:hint="Enter Your Imei1"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_backgeound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eT_userMobile"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/eT_userImei2"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+         android:hint="Enter your Imei2"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_backgeound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eT_userImei1"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        app:layout_constraintTop_toBottomOf="@id/eT_userImei2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_text_backgeound"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
