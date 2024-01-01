@@ -7,7 +7,7 @@
     android:background="#E8E2D9"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.ztelocker.ui.activity.MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,13 +50,12 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img1" />
-            />
+
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/banner1_img_foreground"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />

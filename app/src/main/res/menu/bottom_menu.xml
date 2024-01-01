@@ -2,18 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/homeActivity"
+        android:id="@+id/homegragment"
         android:title="Home"
+        android:icon="@drawable/baseline_home_24"
 
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/profileActivity"
+        android:id="@+id/profileFragment"
         android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
          />
     <item
-        android:id="@+id/signOut"
+        android:id="@+id/logout_fragment"
         android:title="Logout"
+
       />
 
 </menu>

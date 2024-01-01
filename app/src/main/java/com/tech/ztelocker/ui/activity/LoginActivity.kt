@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.example.ztelocker.viewmodel.LoginViewModel
 import com.tech.ztelocker.databinding.ActivityLoginBinding
+import com.tech.ztelocker.ui.activity.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
@@ -23,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val userEmailOrMobile=binding.etEmailLogin.text
         val password=binding.etPasswordLogin.text
        btnSubmit.setOnClickListener {
-       startActivity(Intent(this,MainActivity::class.java))
+       startActivity(Intent(this, MainActivity::class.java))
        }
     }
 }

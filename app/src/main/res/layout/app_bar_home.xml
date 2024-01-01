@@ -18,7 +18,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_home" />
+
 
 
     <!--<include android:layout_height="wrap_content"

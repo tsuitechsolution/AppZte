@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tech.ztelocker.R
 
-class SupportActivity : AppCompatActivity() {
+class ScanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)   
-        setContentView(R.layout.activity_support2)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_scan)
     }
 }

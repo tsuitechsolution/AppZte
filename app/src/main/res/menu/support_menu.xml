@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/call_support"
+        android:title="call_support"
+        android:icon="@android:drawable/sym_call_incoming"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/email_support"
+        android:title="email_support"
+        android:icon="@android:drawable/ic_dialog_email" />
+
+
+</menu>

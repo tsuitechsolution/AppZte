@@ -7,7 +7,7 @@
     android:background="@color/Beige"
     android:orientation="vertical"
 
-    tools:context=".ui.activity.LoginActivity">
+    tools:context="com.example.ztelocker.ui.activity.LoginActivity">
 
 
     <ScrollView
