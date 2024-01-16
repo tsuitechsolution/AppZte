@@ -2,7 +2,7 @@ package com.example.ztelocker.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.example.ztelocker.model.UserMobileRegistration
-import com.example.ztelocker.repository.MainRepository
+import com.tech.ztelocker.repository.MainRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -1,6 +1,6 @@
 package com.example.ztelocker.network
 
-import com.example.ztelocker.api.ApiiServices
+import com.tech.ztelocker.api.ApiiServices
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

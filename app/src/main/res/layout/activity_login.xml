@@ -120,7 +120,6 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="loginClicked"
                 android:text="Sign in"
                 android:padding="@dimen/dimen_5"
                 android:textSize="20sp"
@@ -130,6 +129,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tV_descr"
+                android:text="use any dummy Data"
+                app:layout_constraintTop_toBottomOf="@id/login_btn_signin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+          <!--  <TextView
                 android:id="@+id/login_tv_createaccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -163,7 +171,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/login_btn_signin"
                 app:layout_constraintTop_toBottomOf="@+id/login_btn_signin"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0" />-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

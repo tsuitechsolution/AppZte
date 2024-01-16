@@ -90,14 +90,14 @@ class HomeFragment : Fragment() {
                                 if (allGranted) {
                                     val callIntent = Intent(Intent.ACTION_CALL)
                                     callIntent.data =
-                                        Uri.parse("tel:${913335775452}")
+                                        Uri.parse("tel:${919330987985}")
                                     startActivity(callIntent)
                                 } else {
                                     val intent = Intent(
                                         Intent.ACTION_DIAL,
                                         Uri.fromParts(
                                             "tel",
-                                            913335775452.toString(),
+                                            919330987985.toString(),
                                             null
                                         )
                                     )
@@ -108,8 +108,8 @@ class HomeFragment : Fragment() {
                     R.id.email_support -> {
                         val intent = Intent(Intent.ACTION_SENDTO)
                         intent.data =
-                            Uri.parse("mailto:support@theshineindia.co.in") // only email apps should handle this
-                        intent.putExtra(Intent.EXTRA_EMAIL, "support@theshineindia.co.in")
+                            Uri.parse("mailto:tsuitechsolution@gmail.com") // only email apps should handle this
+                        intent.putExtra(Intent.EXTRA_EMAIL, "tsuitechsolution@gmail.com")
                         intent.putExtra(Intent.EXTRA_SUBJECT, "Support Request")
                         try {
                             startActivity(intent)
@@ -130,7 +130,8 @@ class HomeFragment : Fragment() {
         }
         policyBtn.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("https://www.theshineindia.co.in/tsui-finance-locker")
+            intent.data = Uri.parse("https://www.tsuitechsolution.com/privacy-policy/\n" +
+                    "\n")
             startActivity(intent)
         }
         fetchBtn.setOnClickListener {

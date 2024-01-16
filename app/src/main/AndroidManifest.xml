@@ -30,7 +30,6 @@
         <activity
             android:name="com.example.ztelocker.ui.activity.LoginActivity"
             android:exported="true"
-            android:label="@string/title_activity_login"
             android:theme="@style/Theme.ZTELOCKER">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

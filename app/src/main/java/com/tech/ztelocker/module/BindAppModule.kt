@@ -1,7 +1,7 @@
 package com.example.ztelocker.module
 
-import com.example.ztelocker.api.ApiHelper
-import com.example.ztelocker.api.ApiHelperImp
+import com.tech.ztelocker.api.ApiHelper
+import com.tech.ztelocker.api.ApiHelperImp
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

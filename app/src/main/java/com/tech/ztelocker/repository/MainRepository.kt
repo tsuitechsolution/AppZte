@@ -1,9 +1,10 @@
-package com.example.ztelocker.repository
+package com.tech.ztelocker.repository
 
-import com.example.ztelocker.api.ApiHelper
+import com.tech.ztelocker.api.ApiHelper
 import com.example.ztelocker.model.Retailer
 import com.example.ztelocker.model.RetailerResponse
 import com.example.ztelocker.model.UserMobileRegistration
+import com.tech.ztelocker.model.QRCodeCreateRequest
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 class MainRepository @Inject constructor(private val apiHelper: ApiHelper) {
@@ -13,4 +14,6 @@ class MainRepository @Inject constructor(private val apiHelper: ApiHelper) {
     suspend fun setLogin(retailer: Retailer):Flow<RetailerResponse> {
        return apiHelper.checkLogin(retailer)
     }
+    suspend fun createRegisterQRCode(request: QRCodeCreateRequest): Flow<String> =
+        apiHelper.createRegisterQRCode(request)
 }

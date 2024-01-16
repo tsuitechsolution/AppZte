@@ -3,6 +3,8 @@ package com.example.ztelocker.ui.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.activity.viewModels
 import com.example.ztelocker.viewmodel.LoginViewModel
 import com.tech.ztelocker.databinding.ActivityLoginBinding
@@ -24,7 +26,19 @@ class LoginActivity : AppCompatActivity() {
         val userEmailOrMobile=binding.etEmailLogin.text
         val password=binding.etPasswordLogin.text
        btnSubmit.setOnClickListener {
-       startActivity(Intent(this, MainActivity::class.java))
+           if (userEmailOrMobile.toString().isNotEmpty() && password.toString()
+                   .isNotEmpty()
+           ) {
+               startActivity(Intent(this, MainActivity::class.java))
+
+
+           } else {
+               Toast.makeText(
+                   this,
+                   "Username or password must not be empty",
+                   Toast.LENGTH_SHORT
+               ).show()
+           }
+       }
        }
     }
-}
